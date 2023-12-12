@@ -33,7 +33,7 @@ module FarmBot
       Symbol,
     ]
     config.active_job.queue_adapter = :delayed_job
-    config.action_dispatch.perform_deep_munge = false
+    config.action_dispatch.perform_deep_munge = false ##done till here
     I18n.enforce_available_locales = false
     LOCAL_API_HOST = ENV.fetch("API_HOST", "parcel")
     PARCELJS_URL = "http://#{LOCAL_API_HOST}:3808"
